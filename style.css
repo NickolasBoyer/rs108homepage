@@ -12,16 +12,19 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
-  font-size: 16px; }
+  font-size: 16px;
+  font-family: 'cousine'; }
 
 h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   margin: 0.05em 0; }
 
 ul {
-  list-style-type: square; }
+  list-style-type: square;
+  padding-left: 20px; }
   ul li {
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    margin: 20px 0; }
 
 p {
   line-height: 1.6rem; }
@@ -36,11 +39,22 @@ a {
   text-align: left;
   width: 480px; }
 
+.image-container {
+  position: relative; }
+  .image-container:hover::after {
+    content: "";
+    display: inline-block;
+    border: solid 4px red;
+    color: red;
+    position: absolute;
+    top: 30%;
+    left: 7%;
+    height: 10%;
+    width: 90%; }
+
 img.building-pic {
   padding: 20px;
   width: 100vw;
   max-width: 500px;
   object-fit: contain;
   object-position: center; }
-  img.building-pic:hover {
-    border: solid 5px red; }
