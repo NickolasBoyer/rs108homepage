@@ -3,7 +3,8 @@
 }
 
 body {
-    background-color: white;
+    background-color: black;
+    color: whitesmoke;
     margin: 0;
     height: 99vh;
     width: 100vw;
@@ -33,6 +34,7 @@ p {
 }
 
 a {
+    color: lightblue;
     &:hover {
         color: red;
     }
